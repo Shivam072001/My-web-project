@@ -1,0 +1,392 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "open sans", sans-serif;
+}
+
+body {
+  background: url("https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif");
+}
+
+.first .sidebar {
+  background-color: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  overflow: auto;
+}
+
+.first .sidebar .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.first .sidebar .profile img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.first .sidebar .profile h3 {
+  color: white;
+  margin: 10px 0 5px;
+}
+
+.first .sidebar .profile p {
+  color: rgb(206, 204, 253);
+  font-size: 15px;
+}
+
+.first .sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  border-bottom: 1px solid #10558d;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+
+.first .sidebar ul li a .icon {
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+.first .sidebar ul li a:hover,
+.first .sidebar ul li a.active {
+  color: #0c7db1;
+  background: white;
+  border-right: 2px solid rgb(5, 68, 104);
+}
+
+.first .sidebar ul li a:hover .icon,
+.first .sidebar ul li a.active .icon {
+  color: #0c7db1;
+}
+
+.first .sidebar ul li a:hover::before,
+.first .sidebar ul li a.active::before {
+  display: block;
+}
+
+.first .section {
+  width: calc(100%-250px);
+  margin-left: 225px;
+  transition: all 0.5s ease;
+}
+
+.first .section .top_navbar {
+  background-color: transparent;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.first .section .top_navbar .hamburger a {
+  font-size: 30px;
+  color: white;
+}
+
+body.active .first .sidebar {
+  left: -250px;
+}
+
+body.active .first .section {
+  margin-left: 0;
+  width: 100%;
+}
+
+.options {
+  height: 30px;
+  padding: 5px;
+  margin-left: 20%;
+  font-size: 15px;
+  color: white;
+  border-bottom: 1px solid #10558d;
+}
+
+.first .sidebar ul ul {
+  display: none;
+}
+
+.first .sub-arrow::after {
+  content: "\203A";
+  float: right;
+  font-size: 15px;
+}
+
+.first ul li.tap ul {
+  display: block;
+}
+
+.first ul li.tap .sub-arrow::after {
+  content: "\2039";
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-image: linear-gradient(
+    45deg,
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
+    #f18f43 33.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #476098 66.666%,
+    #476098 83.333%,
+    #a7489b 83.333%
+  );
+}
+
+.leftSection {
+  display: flex;
+  font-size: 30px;
+}
+
+.second {
+  margin-top: 13px;
+  margin-left: 10px;
+  padding: 10px;
+  transform: scale(2);
+  width: 10px;
+  height: 10px;
+  background: url("My\ Pic.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: gray;
+  border-radius: 50%;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.b {
+  margin-top: 13px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  background: url("facebook.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.c {
+  margin-top: 13px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  background: url("instagram.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.d {
+  margin-top: 13px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  background: url("twitter.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.e {
+  margin-top: 13px;
+  margin-left: 10px;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  background: url("pinterest.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.a {
+  float: left;
+  padding: 10px;
+}
+
+.links {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  float: left;
+  color: white;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 10px 10px 0 10px;
+  padding: 2px 2px 0 2px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.my {
+  margin-left: 3vw;
+}
+
+.nav1 .logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.rightSection {
+  float: right;
+}
+
+.nav1 .a:hover {
+  background-color: rgb(214, 238, 77);
+  color: rgb(42, 10, 94);
+}
+
+.nav1 .links:hover {
+  background-color: rgb(214, 238, 77);
+  color: rgb(42, 10, 94);
+}
+
+.my:hover {
+  transform: scale(1.2);
+}
+
+.second:hover {
+  transform: scale(3);
+}
+
+.options1:hover {
+  background-color: blue;
+  color: white;
+}
+
+.options2:hover {
+  background-color: green;
+  color: black;
+}
+
+.options3:hover {
+  background-color: palevioletred;
+  color: white;
+}
+
+.options4:hover {
+  background-color: lightseagreen;
+  color: white;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav1 {
+    display: block;
+    width: 99%;
+    margin-left: 0.5%;
+  }
+  .a {
+    float: none;
+    display: inline-block;
+  }
+  .links {
+    float: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid yellowgreen;
+  }
+  .rightSection {
+    float: none;
+    width: calc(100%-250px);
+    margin-left: 250px;
+    transition: all 0.5s ease;
+  }
+
+  body.active .rightSection {
+    left: -250px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  i {
+    width: 25px;
+  }
+}
+
+#box1 {
+  background-color: #8b9862;
+  height: 100px;
+  width: 50%;
+  margin: 2% 2%;
+  animation: ghost 10s linear infinite;
+  border-radius: 3%;
+  text-align: left;
+}
+
+#text {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  letter-spacing: 2px;
+  padding: 5% 0 5% 5%;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 20px;
+  margin: 5% 0 5% 0;
+  background-color: white;
+  color: white;
+  animation: blink 0.75s linear infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes ghost {
+  0%,
+  0% {
+    transform: translate(2vw, -2vh);
+    opacity: 0;
+  }
+  10%,
+  100% {
+    transform: translate(0vw, 0vh);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="Intro.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Intro</title>
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('.drop').click(function () {
+                $(this).toggleClass('tap');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="nav1">
+        <div class="leftSection">
+            <div class="first">
+                <div class="sidebar">
+                    <div class="profile">
+                        <img src="My Pic.png" alt="no">
+                        <h3>Shivam</h3>
+                        <p>Web designer</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="Intro.html" class="active">
+                                <span class="icon"><i class="fas fa-home"></i></span>
+                                <span class="item">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-list"></i></span>
+                                <span class="item">My Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="drop">
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-user-friends"></i></span>
+                                <span class="item">Connect<span class="sub-arrow"></span></span>
+                            </a>
+                            <ul class="ul">
+                                <li class="options options1"><span><i class="fab fa-facebook"></i></span><span>
+                                        Facebook</span>
+                                </li>
+                                <li class="options options2"><span><i class="fab fa-whatsapp"></i></span><span>
+                                        Whatsapp</span>
+                                </li>
+                                <li class="options options3"><span><i class="fab fa-instagram"></i></span><span>
+                                        Instagram</span>
+                                </li>
+                                <li class="options options4"><span><i class="fab fa-twitter"></i></span><span>
+                                        Twitter</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                                <span class="item">Performance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-database"></i></span>
+                                <span class="item">Achievements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-chart-line"></i></span>
+                                <span class="item">Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-download"></i></span>
+                                <span class="item">Downloads</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon"><i class="fas fa-code"></i></span>
+                                <span class="item">View Codes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <div class="top_navbar">
+                        <div class="hamburger">
+                            <a href="#"><i class="fas fa-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second"></div>
+            <div class="links my">My profile</div>
+        </div>
+        <div class="rightSection">
+            <div class="b a"></div>
+            <div class="c a"></div>
+            <div class="d a"></div>
+            <div class="e a"></div>
+            <a class="links" href="index.html"><span><i class="fas fa-home"></i></span><span> Home</span></a>
+            <a class="links" href=""><span><i class="fas fa-list"></i></span><span> Dashboard</span></a>
+            <a class="links" href=""><span><i class="fas fa-user"></i></span><span> Contact Me</span></a>
+            <a class="links" href=""><span><i class="fas fa-desktop"></i></span><span> About Me</span></a>
+            <a class="links" href=""><span><i class="fas fa-info"></i></span><span> More Info</span></a>
+        </div>
+    </nav>
+
+    <div id="box1">
+        <div id="text"></div>
+        <div id="cursor"></div>
+    </div>
+    <script src="Intro.js"></script>
+</body>
+
+</html>
